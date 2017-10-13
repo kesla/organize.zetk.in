@@ -45,7 +45,7 @@ export function parseWorkbook(data) {
                 });
 
                 // Only include if there are non-null values in the row
-                if (!!rowValues.find(v => v != null)) {
+                if (rowValues.find(v => v != null)) {
                     table.rows.push({
                         included: true,
                         values: rowValues,

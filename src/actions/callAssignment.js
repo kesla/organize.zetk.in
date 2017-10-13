@@ -118,7 +118,7 @@ export function addCallAssignmentCallers(id, callerIds) {
             }
         });
     };
-};
+}
 
 export function removeCallAssignmentCaller(id, callerId) {
     return ({ dispatch, getState, z }) => {
