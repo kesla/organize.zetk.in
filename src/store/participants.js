@@ -67,7 +67,6 @@ export default function participants(state = null, action) {
                 moves: state.moves.filter(m0 => (!executedMoves.find(m1 =>
                     movesMatch(m0, m1))))
             });
-            return state;
 
         case types.UNDO_ACTION_PARTICIPANT_MOVES:
             let moves = action.payload.moves;

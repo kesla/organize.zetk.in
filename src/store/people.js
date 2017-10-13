@@ -142,11 +142,6 @@ export default function people(state = null, action) {
                 return state;
             }
 
-            return Object.assign({}, state, {
-                personList: updateOrAddListItem(state.personList,
-                    person.id, person),
-            });
-
         default:
             return state || {
                 personList: createList(),

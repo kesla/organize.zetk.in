@@ -1,10 +1,10 @@
 import {
-    createList, 
+    createList,
     createListItems,
     updateOrAddListItem,
     updateOrAddListItems,
     removeListItem,
-    getListItemById 
+    getListItemById
 } from '../utils/store';
 
 import {
@@ -151,11 +151,6 @@ export default function locations(state = null, action) {
             else {
                 return state;
             }
-
-            return Object.assign({}, state, {
-                locationList: updateOrAddListItem(state.locationList,
-                    loc.id, loc),
-            });
 
         default:
             return state || {
